@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.spotify img {
+    height: 60px;
+    margin-left: 300px;
+}
+
+.spotify {
+    background-color: #2E3A46;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+#root {
+    background-color: #1E2D3B;
+    height: 90vh;
+}
+
+#root>ul {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#root>ul>li {
+    background-color: #2E3A46;
+    width: 200px;
+    height: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: darkgray;
+}
+
+#root>ul>li>img {
+    margin-top: 10px;
+    height: 100px;
+    align-self: center;
+}
+
+#root>ul>li h3 {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    width: 80%;
+    align-self: center;
+    padding-bottom: 20px;
+}

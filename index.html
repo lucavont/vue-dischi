@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <!-- Font Awesome 5.15.1 (CDN) -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" /> -->
 
@@ -27,10 +29,13 @@
 </head>
 
 <body>
-
+    <div class="spotify">
+        <a href="#"><img src="img/Spotify_icon-icons.com_67077.svg" alt=""></a>
+    </div>
     <div id="root">
         <ul>
-            <li v-for="(album, index) in albums">{{album[index].title}}</li>
+            <li v-for="album in albums">
+                <h3>{{album.title}}</h3> <br> {{album.author}} <br> {{album.year}} <br> <img :src="album.poster" alt=""></li>
         </ul>
     </div>
 
