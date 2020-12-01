@@ -28,6 +28,11 @@
 
 <body>
 
+    <div id="root">
+        <ul>
+            <li v-for="(album, index) in albums">{{album[index].title}}</li>
+        </ul>
+    </div>
 
     <!-- Script JS -->
     <script src="js/script.js" charset="utf-8"></script>
